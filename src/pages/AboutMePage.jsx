@@ -1,17 +1,22 @@
 import React from "react";
 import AboutMe from "../components/AboutMe";
 import Future from "../components/Future";
+import { useLocation } from "react-router-dom";
 
-export default function AboutMePage(){
-    const isDisplayed = window.location.pathname === "/";
-
-    return (
-       <div>
-        {isDisplayed ? (<AboutMe/>) : (
-        <div>
-        <AboutMe/>
-        <Future/>
-        </div>)}
-       </div>
-    )
+export default function AboutMePage() {
+	const location = useLocation();
+	const isAboutPage = location.pathname === "/AboutMePage";
+    
+	return (
+		<div className="about-page">
+			{isAboutPage ? (
+				<>
+					<AboutMe />
+					<Future />
+				</>
+			) : (
+				<AboutMe />
+			)}
+		</div>
+	);
 }
