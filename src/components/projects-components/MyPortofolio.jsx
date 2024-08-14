@@ -8,7 +8,7 @@ import news from "../../assets/news.png";
 
 export default function MyPortofolio() {
 	return (
-		<section className="portofolio-section">
+		<section className="portofolio-section" id="portofolio">
 			<div className="main-container">
 				<div className="portofolio-container-box">
 					<div className="portofolio-container">

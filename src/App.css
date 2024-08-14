@@ -17,13 +17,13 @@ p {
 }
 
 :root {
-	--primary: #605396;
-	--heading-color: #282938;
-	--bg-color: #fff;
+	--primary: #134B70;
+	--heading-color: #201E43;
+	--bg-color: #EEEEEE;
 	--github: #e62872;
 	--darkblue: #1c1e53;
 	--black: #000000;
-	--white: #ffffff;
+	--white: #fff;
 }
 
 .btn {
@@ -157,7 +157,7 @@ a {
 
 /* Hero section style */
 .hero-section {
-	background-color: #e7ebf9;
+	background-color: #EEEEEE;
 }
 
 .hero-section .main-container {
@@ -222,7 +222,7 @@ nav {
 	justify-content: space-between;
 	align-items: center;
 	padding: 15px 85px;
-	background: var(--white);
+	background: #758694;
 	box-shadow: 0px 5px 80px 0 rgba(0, 0, 0, 0.1);
 	position: sticky;
 	top: 0;
@@ -256,8 +256,8 @@ footer {
 }
 
 .navbar-content {
-	color: var(--darkblue);
-	font-size: 18px;
+	color: var(--bg-color);
+	font-size: 26px;
 	font-weight: 400;
 	line-height: 24px;
 	cursor: pointer;
@@ -275,7 +275,7 @@ footer {
 	top: 60px;
 	left: 0;
 	width: calc(100% - 40px);
-	background-color: #fff;
+	background-color: #EEEEEE;
 	box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
 
@@ -283,10 +283,6 @@ footer {
 	margin: 0 1rem;
 }
 
-.navbar-content {
-	text-decoration: none;
-	color: #333;
-}
 
 .btn-outline-primary {
 	border: 1px solid #007bff;
@@ -373,7 +369,7 @@ footer {
 
 /* About me */
 .about-section {
-	background-color: #e7ebf9;
+	background-color: var(--bg-color);
 }
 .about-section .main-container {
 	margin-top: 30px;
@@ -508,7 +504,7 @@ footer {
 /* First projects section */
 
 .first-projects-section {
-	background-color: #e7ebf9;
+	background-color: var(--bg-color);
 }
 
 .first-projects-container-box {
@@ -776,4 +772,8 @@ footer {
 	footer img {
 		width: 70%;
 	}
+}
+
+footer {
+	background-color: #758694;
 }

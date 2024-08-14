@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 
 export default function ContactMe() {
 	return (
-		<section className="contact-section">
+		<section className="contact-section" id="contact">
 			<div className="main-container">
 				<div>
 					<h2>Contact me</h2>

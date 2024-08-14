@@ -22,7 +22,7 @@ export default function Future() {
 							courses from udemy that also touches this part. In that course
 							there was a section dedicated exclusively to the back-end, where
 							I've studied technologies such as Express.js, Authentication and
-							Security, EJS and Databases (noSql especially PostgreSQL).
+							Security, EJS and Databases (Sql especially PostgreSQL).
 						</p>
 						<p className="hero-section-description">
 							Development is continuous and when my motivation decrease,{" "}
