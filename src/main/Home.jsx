@@ -13,7 +13,6 @@ export default function Home (){
             <AboutMe/>
             <Future/>
             <MyPortofolio/>
-            <FirstProjects/>
             <ContactMe/>
         </>
     )

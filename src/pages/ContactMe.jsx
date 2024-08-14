@@ -16,7 +16,7 @@ export default function ContactMe() {
 						to="https://www.linkedin.com/in/alexandru-ionut-toma-57a02a2a9/"
 						target="_blank"
 					>
-						<p className="btn btn-outline-primary">LinkedIn</p>
+						<button className="btn btn-outline-primary">LinkedIn</button>
 					</Link>
 				</div>
 			</div>

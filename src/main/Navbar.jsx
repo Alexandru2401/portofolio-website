@@ -22,6 +22,14 @@ function Navbar() {
           setNav(false);
         }}
       >
+         <ScrollLink
+          to="my-skills"
+          duration={500}
+          smooth={true}
+          className="navbar-content"
+        >
+          <li>Skills</li>
+        </ScrollLink>
         <ScrollLink
           to="about-me"
           duration={500}
