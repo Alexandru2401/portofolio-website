@@ -9,7 +9,7 @@ export default function MyPortofolio() {
       <div className="main-container">
         <div className="portofolio-container-box">
           <div className="portofolio-container">
-            <h2 className="section-heading">Recent Projects</h2>
+            <h2 className="section-heading">My Projects</h2>
           </div>
           <div>
             <Link to="https://github.com/Alexandru2401" target="_blank">
@@ -32,7 +32,6 @@ export default function MyPortofolio() {
               />
             ))}
           </div>
-          <div>Description</div>
         </div>
       </div>
     </section>

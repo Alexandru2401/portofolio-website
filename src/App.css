@@ -76,6 +76,7 @@ p {
   align-items: center;
   box-shadow: 0 1px 2px 0 rgb(16, 24, 40);
   gap: 16px;
+  width: 200px;
 }
 
 .btn-github:hover {
@@ -88,6 +89,8 @@ p {
   max-width: 1320px;
   margin: 0 auto;
   padding: 40px 30px;
+  display: flex;
+  flex-direction: column;
 }
 
 /* Main headings */
@@ -158,62 +161,35 @@ a {
 /* Hero section style */
 .hero-section {
   background-color: #eeeeee;
-}
-
-.hero-section .main-container {
   display: flex;
   align-items: center;
-  justify-content: space-between;
-  gap: 32px;
+  justify-content: space-around;
 }
 
-.hero-section-content-box.about-section-box {
-  margin-top: 30px;
+.img-container {
+  width: 50%;
 }
 
-.hero-section-content-box {
+.hero-section img {
+  width: 100%;
+}
+
+.hero-section-container {
   display: flex;
+  max-width: 1320px;
   align-items: center;
-  gap: 32px;
 }
 
-.hero-section-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 21px;
-}
-
-.hero-section-content-box > .btn {
-  margin-top: 22px;
-}
-
-.hero-section-title {
-  color: var(--heading-color);
-  font-weight: 600;
-  font-size: 74px;
-  line-height: 90px;
-  align-self: stretch;
-}
-
-.hero-section-title-color {
-  color: var(--primary);
+.hero-section-container .content-container {
+  width: 50%;
+  padding: 70px 0;
 }
 
 .hero-section-description {
   color: var(--darkblue);
   font-size: 24px;
   font-weight: 400;
-  line-height: 36px;
-}
-
-.hero-section-img {
-  display: flex;
-}
-
-.hero-section-img > img {
-  width: 100%;
-  height: 100%;
+  margin: 40px 0;
 }
 
 /* Navbar */
@@ -298,6 +274,7 @@ footer {
   cursor: pointer;
 }
 
+/* Skill Section */
 .skill-section .skills-section-heading {
   margin-bottom: 30px;
 }
@@ -370,17 +347,23 @@ footer {
 .about-section {
   background-color: var(--bg-color);
 }
-.about-section .main-container {
-  margin-top: 30px;
+
+.about-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.about-container .about-content {
+  width: 50%;
+  padding: 70px;
 }
 
-.about-page .about-section .main-container {
-  margin-top: 0px;
+.about-section-img {
+  width: 50%;
 }
 
 .about-section-img > img {
   width: 100%;
-  height: 100%;
 }
 .about-skills {
   display: grid;
@@ -424,9 +407,11 @@ footer {
 
 .portofolio-container-box {
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   align-items: center;
   width: 100%;
+  gap: 20px;
+  flex-direction: column;
 }
 
 .portofolio-container {
@@ -794,8 +779,10 @@ footer {
   justify-content: space-evenly;
 }
 
-.first-col, .second-col {
+.first-col,
+.second-col {
   flex: 1;
+  position: relative;
 }
 
 .portofolio-img {
