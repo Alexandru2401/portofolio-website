@@ -19,13 +19,16 @@ p {
 :root {
   --primary: #134b70;
   --heading-color: #201e43;
-  --bg-color: #eeeeee;
+  --bg-color: #FF204E;
   --github: #e62872;
   --darkblue: #1c1e53;
   --black: #000000;
-  --white: #fff;
+  --white: #EEEEEE;
 }
+/* 
+negru : 151515
 
+*/
 .btn {
   font-family: "Roboto", sans-serif;
   display: flex;
@@ -164,6 +167,7 @@ a {
   display: flex;
   align-items: center;
   justify-content: space-around;
+  min-height: 90vh;
 }
 
 .img-container {
@@ -239,6 +243,10 @@ footer {
   cursor: pointer;
 }
 
+.navbar-content:hover {
+  color: var(--white)
+}
+
 .list-container {
   display: flex;
   list-style-type: none;
@@ -275,6 +283,9 @@ footer {
 }
 
 /* Skill Section */
+.skill-section{
+  margin: 50px 0;
+}
 .skill-section .skills-section-heading {
   margin-bottom: 30px;
 }
@@ -288,21 +299,24 @@ footer {
 
 .skill-section-container {
   display: grid;
-  justify-content: center;
   align-items: flex-start;
-  gap: 42px;
-  grid-template-columns: repeat(3, 1fr);
+  gap: 60px;
+  grid-template-columns: repeat(2, 1fr);
   width: 100%;
+  padding: 50px 0 ;
 }
 
 .skill-card-section {
   align-items: flex-start;
-  background: #e7ebf9;
+  background: var(--bg-color);
   border-radius: 10px;
   display: flex;
   flex-direction: column;
   height: 100%;
-  border-bottom: 4px solid #e7ebf9;
+  border-bottom: 4px solid var(--darkblue);
+}
+.skill-card-title {
+  border-bottom: 3px solid var(--darkblue);
 }
 
 .skiil-section-card-content {
@@ -310,37 +324,12 @@ footer {
 }
 
 .skill-card-section:hover {
-  border-bottom: 4px solid var(--primary);
+  transform: scale(1.05);
+  cursor: pointer;
 }
-
-.skill-card-section .skill-section-description:hover {
-  color: var(--darkblue);
-}
-
-.skill-card-section-content {
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  gap: 32px;
-  align-self: stretch;
-}
-
-.skill-section-title {
-  font-size: 28px;
-  font-weight: 700;
-  line-height: 45px;
-  padding: 5px 10px 5px 30px;
-  width: calc(100% - 30px);
-  background-color: #605396;
-  color: white;
-  border-radius: 10px 10px 0 0;
-}
-
-.skill-section-description {
-  color: var(--black);
-  font-weight: 400;
-  line-height: 32px;
-  font-size: 22px;
+.skill-card-body li{
+  font-size: 25px;
+  list-style: none;
 }
 
 /* About me */
@@ -764,6 +753,7 @@ footer {
   display: flex;
   width: 800px;
   flex-direction: row;
+  background-color: var(--bg-color);
 }
 
 .btn-container {

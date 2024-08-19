@@ -10,7 +10,11 @@ export default function MySkill() {
         </div>
         <div className="skill-section-container">
           {MySkills.map((skillsSet, index) => (
-            <Card key={index} title={skillsSet.title} skills={skillsSet.skills} />
+            <Card
+              key={index}
+              title={skillsSet.title}
+              skills={skillsSet.skills}
+            />
           ))}
         </div>
       </div>

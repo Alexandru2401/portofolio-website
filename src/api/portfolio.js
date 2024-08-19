@@ -5,14 +5,6 @@ import news from "../assets/news.png";
 
 export const portofolio = [
   {
-    title: "Your dream House",
-    img: toprent,
-    content: "If you need to rent a house, this site is all you need!",
-    technologies: ["React", "Vanilla Css"],
-    link: "https://github.com/Alexandru2401/real-estate-main",
-    demo: "https://toprent-real-estate.netlify.app",
-  },
-  {
     title: "GymWorld",
     img: gym,
     content: "Level up your form!",
@@ -35,5 +27,13 @@ export const portofolio = [
     technologies: ["React", "ReactBootstrap"],
     link: "https://github.com/Alexandru2401/news-project",
     demo: "https://news-web-it-school.netlify.app",
+  },
+  {
+    title: "Your dream House",
+    img: toprent,
+    content: "If you need to rent a house, this site is all you need!",
+    technologies: ["React", "Vanilla Css"],
+    link: "https://github.com/Alexandru2401/real-estate-main",
+    demo: "https://toprent-real-estate.netlify.app",
   },
 ];

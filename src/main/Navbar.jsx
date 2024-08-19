@@ -4,7 +4,7 @@ import logo from "../assets/logo.png";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
 import { Link as ScrollLink } from "react-scroll";
-
+import { motion } from "framer-motion";
 function Navbar() {
   const [nav, setNav] = useState(false);
 
@@ -22,13 +22,18 @@ function Navbar() {
           setNav(false);
         }}
       >
-         <ScrollLink
+        <ScrollLink
           to="my-skills"
           duration={500}
           smooth={true}
           className="navbar-content"
         >
-          <li>Skills</li>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            Skills
+          </motion.li>
         </ScrollLink>
         <ScrollLink
           to="about-me"
@@ -36,7 +41,12 @@ function Navbar() {
           smooth={true}
           className="navbar-content"
         >
-          <li>About Me</li>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            About Me
+          </motion.li>
         </ScrollLink>
         <ScrollLink
           to="portofolio"
@@ -44,7 +54,12 @@ function Navbar() {
           smooth={true}
           className="navbar-content"
         >
-          <li>Portofolio</li>
+          <motion.li
+            whileHover={{ scale: 1.1 }}
+            transition={{ type: "spring", stiffness: 300 }}
+          >
+            Portofolio
+          </motion.li>
         </ScrollLink>
 
         <ScrollLink
