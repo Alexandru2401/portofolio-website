@@ -194,6 +194,7 @@ a {
 .hero-section-container .content-container {
   width: 50%;
   padding: 70px 0;
+  margin-right: 150px;
 }
 
 .hero-section-description {
@@ -225,7 +226,7 @@ footer {
   display: flex;
   align-items: center;
   justify-content: center;
-  padding-bottom: 20px;
+  padding: 50px;
   border-top: 2px solid var(--primary);
 }
 
@@ -272,6 +273,8 @@ footer {
 
 .list-container li {
   margin: 0 1rem;
+  display: flex;
+  align-items: center;
 }
 
 .btn-outline-primary {
@@ -315,7 +318,7 @@ footer {
 
 .skill-card-section {
   align-items: flex-start;
-  background: var(--bg-color);
+  background: #67a6eb;
   border-radius: 10px;
   display: flex;
   flex-direction: column;
@@ -323,7 +326,7 @@ footer {
   border-bottom: 4px solid var(--darkblue);
 }
 .skill-card-title {
-  border-bottom: 3px solid var(--darkblue);
+  border-bottom: 3px solid var(--black);
 }
 
 .skiil-section-card-content {
@@ -336,7 +339,7 @@ footer {
 }
 .skill-card-body li {
   font-size: 25px;
-  list-style: none;
+  color: var(--black);
 }
 
 /* About me */
@@ -433,7 +436,7 @@ footer {
 }
 
 .portofolio-img {
-  height: auto;
+  max-height: 400px;
   width: 100%;
   object-fit: cover;
 }
@@ -563,6 +566,9 @@ footer {
     position: absolute;
     top: 50%;
   }
+  .skill-section .main-container {
+    padding: 0px;
+  }
 
   .skill-section {
     display: flex;
@@ -587,7 +593,20 @@ footer {
   .hero-section {
     margin-top: 0;
   }
+.hero-section-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 
+.hero-section-container .img-container{
+  width: 60%;
+}
+
+.hero-section-container .content-container {
+  width: 80%;
+  margin: 10px;
+}
   .hero-section .main-container,
   .hero-section-content-box.about-section-box {
     flex-direction: column;
@@ -636,14 +655,23 @@ footer {
     flex-wrap: wrap;
   }
 
-  .about-section {
+   .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
-    padding: 20px;
     gap: 20px;
   }
+  
+  .about-container .about-content {
+    padding: 0;
+    width: 100%;
+  }
+
+  .about-section-img {
+    width: 100%;
+  }
+  
   .about-skills {
     display: flex;
     flex-wrap: wrap;
@@ -701,9 +729,14 @@ footer {
   .contact-section .section-title {
     padding: 20px;
   }
-  footer img {
-    width: 70%;
-  }
+
+  /* .card-container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    width: 200px;
+  } */
+
 }
 @media only screen and (max-width: 1024px) {
   .portofolio-section {
@@ -759,9 +792,7 @@ footer {
   .contact-section .section-title {
     padding: 20px;
   }
-  footer img {
-    width: 70%;
-  }
+
 }
 
 footer {

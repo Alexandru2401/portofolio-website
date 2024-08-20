@@ -26,9 +26,8 @@ export default function HeroImage() {
         repeat: Infinity,
       }}
       style={{
-        width: "400px",
-        height: "400px",
-        margin: "100px 0 0 170px",
+        width: "300px",
+        height: "300px",
         border: "5px solid red",
         float: "left",
       }}

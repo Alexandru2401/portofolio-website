@@ -2,7 +2,7 @@ import React from "react";
 import PortofolioCard from "./PortofolioCard";
 import { Link } from "react-router-dom";
 import { portofolio } from "../../api/portfolio";
-
+import GitHubIcon from "@mui/icons-material/GitHub";
 export default function MyPortofolio() {
 
   return (
@@ -14,7 +14,7 @@ export default function MyPortofolio() {
           </div>
           <div>
             <Link to="https://github.com/Alexandru2401" target="_blank">
-              <button className="btn btn-github">Visit my Github</button>
+              <button className="btn btn-github">Visit my Github <GitHubIcon/> </button>
             </Link>
           </div>
         </div>

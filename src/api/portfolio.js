@@ -3,6 +3,7 @@ import toprent from "../assets/toprent.png";
 import ecomm from "../assets/ecomm.png";
 import news from "../assets/news.png";
 import cofee from "../assets/coffee.png";
+import quizz from "../assets/quizz.png"
 export const portofolio = [
   {
     title: "E-commerce",
@@ -25,7 +26,7 @@ export const portofolio = [
   },
   {
     title: "QuizApp",
-    img: "",
+    img: quizz,
     content: "Test your knowledge!",
     description: "description",
     technologies: ["React", "Vanilla Css"],

@@ -1,28 +1,19 @@
-import React, { useState, useEffect } from "react";
-import { Link } from "react-router-dom";
-import logo from "../assets/logo.png";
+import React, { useState } from "react";
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
-import PsychologyIcon from '@mui/icons-material/Psychology';
+import PsychologyIcon from "@mui/icons-material/Psychology";
 import { Link as ScrollLink } from "react-scroll";
-import AccountBoxIcon from '@mui/icons-material/AccountBox';
-import PlaylistAddCheckIcon from '@mui/icons-material/PlaylistAddCheck';
-import ContactMailIcon from '@mui/icons-material/ContactMail';
-import HomeIcon from '@mui/icons-material/Home';
+import AccountBoxIcon from "@mui/icons-material/AccountBox";
+import PlaylistAddCheckIcon from "@mui/icons-material/PlaylistAddCheck";
+import ContactMailIcon from "@mui/icons-material/ContactMail";
+import HomeIcon from "@mui/icons-material/Home";
 import { motion } from "framer-motion";
 function Navbar() {
   const [nav, setNav] = useState(false);
 
   return (
     <nav>
-      {/* <div>
-        <Link to="/">
-          <img src={logo} className="logo" />
-        </Link>
-      </div> */}
-      <div className="logo">
-        Alex.Dev
-      </div>
+      <div className="logo">Alex.Dev</div>
 
       <ul
         className={nav ? "list-container-mobile show" : "list-container"}
@@ -30,7 +21,7 @@ function Navbar() {
           setNav(false);
         }}
       >
-         <ScrollLink
+        <ScrollLink
           to="heroSection"
           duration={500}
           smooth={true}
@@ -40,7 +31,7 @@ function Navbar() {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Home <HomeIcon/>
+            Home <HomeIcon className="icon" />
           </motion.li>
         </ScrollLink>
         <ScrollLink
@@ -53,7 +44,7 @@ function Navbar() {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Skills <PsychologyIcon/>
+            Skills <PsychologyIcon className="icon" />
           </motion.li>
         </ScrollLink>
         <ScrollLink
@@ -66,7 +57,7 @@ function Navbar() {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            About Me <AccountBoxIcon/>
+            About Me <AccountBoxIcon className="icon" />
           </motion.li>
         </ScrollLink>
         <ScrollLink
@@ -79,7 +70,7 @@ function Navbar() {
             whileHover={{ scale: 1.1 }}
             transition={{ type: "spring", stiffness: 300 }}
           >
-            Portofolio <PlaylistAddCheckIcon/>
+            Portofolio <PlaylistAddCheckIcon className="icon" />
           </motion.li>
         </ScrollLink>
 
@@ -89,7 +80,9 @@ function Navbar() {
           smooth={true}
           className="btn btn-outline-primary"
         >
-          <li>Contact me <ContactMailIcon/></li> 
+          <li>
+            Contact me <ContactMailIcon className="icon" />
+          </li>
         </ScrollLink>
       </ul>
 

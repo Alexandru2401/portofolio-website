@@ -61,26 +61,6 @@ export default function AboutMe() {
             </motion.p>
           </div>
         </div>
-        {/* <div>
-					<h3>My Skils</h3>
-					<div className="about-skills">
-						<div className="about-skills-container">
-							<img src={html} alt="html" />
-						</div>
-						<div className="about-skills-container">
-							<img src={css} alt="css" />
-						</div>
-						<div className="about-skills-container">
-							<img src={js} alt="javascript" />
-						</div>
-						<div className="about-skills-container">
-							<img src={reactimg} alt="react" />
-						</div>
-						<div className="about-skills-container">
-							<img src={bootstrap} alt="bootstrap" />
-						</div>
-					</div>
-				</div> */}
       </div>
     </section>
   );

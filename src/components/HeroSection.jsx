@@ -14,7 +14,7 @@ export default function HeroSection() {
             Developer
           </h1>
           <p className="hero-section-description">
-            My name is Toma Alexandru and I'm a junior Front-End Developer.
+            My name is Toma Alexandru and I'm a junior FrontEnd Developer.
             <br />
             I'm in my first year at the University Titu Maiorescu, Computer
             Science and also a fresh graduated of IT School Romania with

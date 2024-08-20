@@ -31,15 +31,16 @@ export default function Future() {
             I'm constantly working on projects and trying to use different
             technologies. I'm learning data structures and algorithms in
             JavaScript to further develop my logic and thinking in programming.
+            I also work on TypeScript. 
           </p>
           <p className="hero-section-description">
             In the future I plan to learn the following FrontEnd technologies:
-            TypeScript, Sass, Tailwind, Redux and Next.js.
+            Sass, Redux and Next.js.
             <br />
             When it comes to the server side, I've completed one of the courses
             from udemy that also touches this part. In that course there was a
             section dedicated exclusively to the back-end, where I've studied
-            technologies such as Express.js, Authentication and Security, EJS
+            technologies such as Express.js, Node.js, Authentication and Security, EJS
             and Databases (Sql especially PostgreSQL).
           </p>
           <p className="hero-section-description">
