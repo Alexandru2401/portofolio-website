@@ -6,7 +6,7 @@ export const MySkills = [
   { title: "CSS Frameworks", skills: ["Bootstrap", "Tailwind"] },
   {
     title: "Other",
-    skills: ["Responsive Design", "Node.js", "Expess.js", "PostgreSql"],
+    skills: ["Responsive Design", "Node.js", "Express.js", "PostgreSql"],
   },
   {
     title: "Library",

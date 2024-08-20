@@ -19,23 +19,28 @@ p {
 :root {
   --primary: #134b70;
   --heading-color: #201e43;
-  --bg-color: #FF204E;
+  --bg-color: #dbe2ef;
   --github: #e62872;
-  --darkblue: #1c1e53;
+  /* --darkblue: #1c1e53; */
+  --darkblue: #134b70;
   --black: #000000;
-  --white: #EEEEEE;
+  --white: #eeeeee;
 }
 /* 
 negru : 151515
-
+/* negru : 112D4E
+ albastru: 3F72AF
+ bg-inchis: DBE2EF
+ bg-deschis: F9F7F7
 */
+
 .btn {
   font-family: "Roboto", sans-serif;
   display: flex;
   align-items: center;
   justify-content: center;
   padding: 14px 32px;
-  width: 160px;
+  width: 180px;
   font-size: 16px;
   font-style: normal;
   font-weight: bold;
@@ -46,7 +51,9 @@ negru : 151515
   border-radius: 4px;
   transition: background-color 0.5s;
 }
-
+.icon{
+  margin: 0 10px;
+}
 .btn-outline-primary {
   color: var(--primary);
   background-color: var(--white);
@@ -128,7 +135,7 @@ a {
 }
 
 .text-md {
-  color: var(--darkblue);
+  color: var(--heading-color);
   font-size: 16px;
   font-weight: 400;
   line-height: 24px;
@@ -163,7 +170,7 @@ a {
 
 /* Hero section style */
 .hero-section {
-  background-color: #eeeeee;
+  background-color: var(--bg-color);
   display: flex;
   align-items: center;
   justify-content: space-around;
@@ -211,8 +218,7 @@ nav {
   z-index: 10;
 }
 nav .logo {
-  width: 100%;
-  height: auto;
+ font-size: 24px;
 }
 
 footer {
@@ -244,7 +250,8 @@ footer {
 }
 
 .navbar-content:hover {
-  color: var(--white)
+  color: var(--black);
+  font-weight: bold;
 }
 
 .list-container {
@@ -283,7 +290,7 @@ footer {
 }
 
 /* Skill Section */
-.skill-section{
+.skill-section {
   margin: 50px 0;
 }
 .skill-section .skills-section-heading {
@@ -303,7 +310,7 @@ footer {
   gap: 60px;
   grid-template-columns: repeat(2, 1fr);
   width: 100%;
-  padding: 50px 0 ;
+  padding: 50px 0;
 }
 
 .skill-card-section {
@@ -327,7 +334,7 @@ footer {
   transform: scale(1.05);
   cursor: pointer;
 }
-.skill-card-body li{
+.skill-card-body li {
   font-size: 25px;
   list-style: none;
 }
@@ -349,6 +356,10 @@ footer {
 
 .about-section-img {
   width: 50%;
+}
+
+.about-me-heading{
+  border-bottom: 3px solid var(--heading-color);
 }
 
 .about-section-img > img {
@@ -380,6 +391,9 @@ footer {
   color: rgb(208, 160, 14);
 }
 /* My portofolio */
+.portofolio-section {
+  background-color: var(--bg-color);
+}
 .portofolio-section .main-container {
   display: flex;
   flex-direction: column;
@@ -443,6 +457,10 @@ footer {
   min-height: 500px;
   overflow: hidden;
   max-width: 350px;
+}
+.portofolio-section-card-content .description{
+  font-size: 15px;
+  padding: 20px 0;
 }
 
 .portofolio-section-card-content {
@@ -578,7 +596,9 @@ footer {
   .list-container {
     display: none;
   }
-
+  .active {
+    background-color: #007bff;
+  }
   .nav-btn {
     display: block;
   }
@@ -773,6 +793,7 @@ footer {
 .second-col {
   flex: 1;
   position: relative;
+  background-color: var(--white);
 }
 
 .portofolio-img {

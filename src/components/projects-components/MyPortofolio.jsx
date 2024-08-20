@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import { portofolio } from "../../api/portfolio";
 
 export default function MyPortofolio() {
+
   return (
     <section className="portofolio-section" id="portofolio">
       <div className="main-container">
@@ -27,6 +28,7 @@ export default function MyPortofolio() {
                 title={item.title}
                 technologies={item.technologies}
                 content={item.content}
+                description={item.description}
                 link={item.link}
                 demo={item.demo}
               />

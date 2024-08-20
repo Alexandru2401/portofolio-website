@@ -1,6 +1,6 @@
 import React from "react";
 import { Link } from "react-router-dom";
-
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 export default function ContactMe() {
 	return (
 		<section className="contact-section" id="contact">
@@ -16,7 +16,7 @@ export default function ContactMe() {
 						to="https://www.linkedin.com/in/alexandru-ionut-toma-57a02a2a9/"
 						target="_blank"
 					>
-						<button className="btn btn-outline-primary">LinkedIn</button>
+						<button className="btn btn-outline-primary">LinkedIn <LinkedInIcon/></button>
 					</Link>
 				</div>
 			</div>

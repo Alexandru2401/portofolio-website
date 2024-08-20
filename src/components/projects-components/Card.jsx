@@ -2,13 +2,6 @@ import React from "react";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 export function Card({ title, skills }) {
-  // const { scrollY } = useScroll();
-  // const ySkills = useTransform(scrollY, [400, 800], [100, 0]);
-  // const opacitySkills = useTransform(
-  //   scrollY,
-  //   [400, 600, 800, 1000],
-  //   [0, 1, 1, 0]
-  // );
   const { ref, inView } = useInView({
     triggerOnce: false,
     threshold: 0.2,

@@ -1,35 +1,64 @@
 import React from "react";
 import avatar from "../assets/avatar.png";
-// import html from "../assets/html.png";
-// import css from "../assets/css.png";
-// import js from "../assets/js.png";
-// import reactimg from "../assets/reactimg.png";
-// import bootstrap from "../assets/bootstrap.png";
-
+import { motion } from "framer-motion";
+import { useInView } from "react-intersection-observer";
 export default function AboutMe() {
+  const { ref, inView } = useInView({
+    triggerOnce: false,
+    threshold: 0.1,
+  });
+
   return (
     <section className="about-section" id="about-me">
       <div className="main-container">
         <div className="about-container">
           <div className="about-section-img">
-            <img src={avatar} alt="avatar" />
+            <motion.img
+              ref={ref}
+              initial={{ opacity: 0, x: 0 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, x: -150 }}
+              transition={{ duration: 1 }}
+              src={avatar}
+              alt="avatar"
+            
+            />
           </div>
           <div className="about-content">
-            <h1 className="about-me-heading">About me</h1>
-            <p className="hero-section-description">
+            <motion.h1
+              ref={ref}
+              initial={{ opacity: 0, x: 0 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, x: 150 }}
+              transition={{ duration: 1 }}
+              className="about-me-heading"
+            >
+              About me
+            </motion.h1>
+            <motion.p
+              ref={ref}
+              className="hero-section-description"
+              initial={{ opacity: 0, y: 150 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 150 }}
+              transition={{ duration: 1.5 }}
+            >
               I am a junior front-end developer passionate about technology. I
               work daily on improving my technical skills. The technologies used
               in my projects are HTML, CSS, JavaScript and React, but I try to
               make each project unique.
-            </p>
-            <p className="hero-section-description">
+            </motion.p>
+            <motion.p
+              ref={ref}
+              className="hero-section-description"
+              initial={{ opacity: 0, y: 150 }}
+              animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 150 }}
+              transition={{ duration: 1.5 }}
+            >
               I follow my professional and personal development, and this can be
               seen in my projects. For example in the first big project that I
               did in React, which is named TopRent, I used CSS for styling, and
               the data was loaded from local JSON files. For in another project,
               which is named E-Com, I used the Bootstrap CSS Framework, and I
               got the data from an Api.
-            </p>
+            </motion.p>
           </div>
         </div>
         {/* <div>
