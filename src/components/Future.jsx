@@ -15,7 +15,7 @@ export default function Future() {
           ref={ref}
           className="about-me-heading"
           initial={{ opacity: 0, x: 0 }}
-          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, x: 150 }}
+          animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, x: 50 }}
           transition={{ duration: 1 }}
         >
           Present and Future plans

@@ -1,5 +1,5 @@
 import React from "react";
-import avatar from "../assets/avatar.png";
+import avatar from "../assets/avatar.jpeg";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 export default function AboutMe() {
@@ -17,9 +17,10 @@ export default function AboutMe() {
               ref={ref}
               initial={{ opacity: 0, x: 0 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, x: -150 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               src={avatar}
               alt="avatar"
+              style={{width:"400px", borderRadius:"50%", height:"400px", objectFit:"cover"}}
             
             />
           </div>
@@ -28,7 +29,7 @@ export default function AboutMe() {
               ref={ref}
               initial={{ opacity: 0, x: 0 }}
               animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, x: 150 }}
-              transition={{ duration: 1 }}
+              transition={{ duration: 0.5 }}
               className="about-me-heading"
             >
               About me

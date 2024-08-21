@@ -93,7 +93,7 @@ function Navbar() {
         }}
       >
         {" "}
-        {nav ? <CloseIcon /> : <MenuIcon />}
+        {nav ? <CloseIcon style={{fontSize: "30px"}}/> : <MenuIcon style={{fontSize: "30px"}}/>}
       </button>
     </nav>
   );

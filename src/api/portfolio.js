@@ -3,7 +3,7 @@ import toprent from "../assets/toprent.png";
 import ecomm from "../assets/ecomm.png";
 import news from "../assets/news.png";
 import cofee from "../assets/coffee.png";
-import quizz from "../assets/quizz.png"
+import quizz from "../assets/quizz.png";
 export const portofolio = [
   {
     title: "E-commerce",
@@ -19,7 +19,7 @@ export const portofolio = [
     title: "CoffeeShop",
     img: cofee,
     content: "Work in progress...",
-    description: "description",
+    description: "This is a website for a coffee shop. Please notice that is not the final form, more features will be implemented in future.  ",
     technologies: ["React", "ReactBootstrap"],
     link: "https://github.com/Alexandru2401/coffe-app",
     demo: "https://coffee-app-alex.netlify.app",
@@ -28,7 +28,8 @@ export const portofolio = [
     title: "QuizApp",
     img: quizz,
     content: "Test your knowledge!",
-    description: "description",
+    description:
+      "A quizz app. It contains 7 question about React. When test is over, you can se you score, correct answers, wrong answers or skipped questions.",
     technologies: ["React", "Vanilla Css"],
     link: "https://github.com/Alexandru2401/quiz-app",
     demo: "https://react-quiz-app-alex.netlify.app",
@@ -37,7 +38,8 @@ export const portofolio = [
     title: "GymWorld",
     img: gym,
     content: "Level up your form!",
-    description: "GymWorld presents a website for a gym. Here the customer can find information about their trainers, training programs, prices and find 2 forms, one for contact and the other for filling in the necessary data to pay the membership.",
+    description:
+      "GymWorld presents a website for a gym. Here the customer can find information about their trainers, training programs, prices and find 2 forms, one for contact and the other for filling in the necessary data to pay the membership.",
     technologies: ["React", "Vanilla Css"],
     link: "https://github.com/Alexandru2401/gym-project",
     demo: "https://gym-world-project.netlify.app",

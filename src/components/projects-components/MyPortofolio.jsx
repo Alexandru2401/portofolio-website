@@ -18,7 +18,7 @@ export default function MyPortofolio() {
             </Link>
           </div>
         </div>
-        <div>
+        <div className="portofolio-section-wrapper">
           <div className="portofolio-section-container">
             {portofolio.map((item, index) => (
               <PortofolioCard

@@ -4,6 +4,7 @@ import ArrowOutwardIcon from "@mui/icons-material/ArrowOutward";
 import { motion } from "framer-motion";
 import { useInView } from "react-intersection-observer";
 import GitHubIcon from "@mui/icons-material/GitHub";
+import { useState, useEffect } from "react";
 export default function PortofolioCard({
   demo,
   index,
@@ -14,6 +15,16 @@ export default function PortofolioCard({
   description,
   technologies,
 }) {
+  const [isLargeScreen, setIsLargeScreen] = useState(window.innerWidth >= 768);
+  useEffect(() => {
+    const handleResize = () => {
+      setIsLargeScreen(window.innerWidth >= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
   const position = index % 2 === 0;
   const { ref, inView } = useInView({
     triggerOnce: false,
@@ -21,8 +32,7 @@ export default function PortofolioCard({
   });
   return (
     <motion.div
-      className="card-container"
-      style={{ flexDirection: position ? "row" : "row-reverse" }}
+      className={`card-container ${isLargeScreen ? (position ? "row": "row-reverse") : ""}`}
       ref={ref}
       initial={{ opacity: 0, y: 150 }}
       animate={inView ? { opacity: 1, y: 0 } : { opacity: 0, y: 50 }}

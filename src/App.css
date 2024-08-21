@@ -51,7 +51,7 @@ negru : 151515
   border-radius: 4px;
   transition: background-color 0.5s;
 }
-.icon{
+.icon {
   margin: 0 10px;
 }
 .btn-outline-primary {
@@ -198,7 +198,7 @@ a {
 }
 
 .hero-section-description {
-  color: var(--darkblue);
+  color: var(--black);
   font-size: 24px;
   font-weight: 400;
   margin: 40px 0;
@@ -219,7 +219,7 @@ nav {
   z-index: 10;
 }
 nav .logo {
- font-size: 24px;
+  font-size: 24px;
 }
 
 footer {
@@ -269,6 +269,11 @@ footer {
   width: calc(100% - 40px);
   background-color: #eeeeee;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  padding-bottom: 20px;
+}
+
+.list-container-mobile li {
+  margin: 10px;
 }
 
 .list-container li {
@@ -361,7 +366,7 @@ footer {
   width: 50%;
 }
 
-.about-me-heading{
+.about-me-heading {
   border-bottom: 3px solid var(--heading-color);
 }
 
@@ -461,8 +466,8 @@ footer {
   overflow: hidden;
   max-width: 350px;
 }
-.portofolio-section-card-content .description{
-  font-size: 15px;
+.portofolio-section-card-content .description {
+  font-size: 18px;
   padding: 20px 0;
 }
 
@@ -589,29 +594,34 @@ footer {
   }
 }
 
-@media only screen and (max-width: 876px) {
+@media only screen and (max-width: 767px) {
   .hero-section {
     margin-top: 0;
   }
-.hero-section-container {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-}
+  .hero-section-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
 
-.hero-section-container .img-container{
-  width: 60%;
-}
+  .hero-section-container .img-container {
+    width: 60%;
+  }
 
-.hero-section-container .content-container {
-  width: 80%;
-  margin: 10px;
-}
+  .hero-section-container .content-container {
+    width: 80%;
+    margin: 10px;
+  }
   .hero-section .main-container,
   .hero-section-content-box.about-section-box {
     flex-direction: column;
   }
-
+  .hero-section-container {
+    padding-bottom: 20px;
+  }
+  .hero-section-container .content-container {
+    padding: 10px;
+  }
   .list-container {
     display: none;
   }
@@ -655,14 +665,14 @@ footer {
     flex-wrap: wrap;
   }
 
-   .about-container {
+  .about-container {
     display: flex;
     align-items: center;
     justify-content: center;
     flex-direction: column;
     gap: 20px;
   }
-  
+
   .about-container .about-content {
     padding: 0;
     width: 100%;
@@ -671,12 +681,16 @@ footer {
   .about-section-img {
     width: 100%;
   }
-  
+
   .about-skills {
     display: flex;
     flex-wrap: wrap;
   }
 
+  .skill-section {
+    margin: 10px 0;
+  }
+
   .portofolio-section {
     padding: 20px;
     margin-top: 20px;
@@ -687,6 +701,7 @@ footer {
     display: flex;
     justify-content: center;
     flex-direction: column;
+    width: 350px;
   }
 
   .portofolio-container-box {
@@ -729,22 +744,49 @@ footer {
   .contact-section .section-title {
     padding: 20px;
   }
-
-  /* .card-container {
+  .portofolio-section .main-container {
     display: flex;
     align-items: center;
+    justify-content: center;
+  }
+  .portofolio-section-container {
+    display: flex;
     flex-direction: column;
-    width: 200px;
-  } */
+    align-items: center;
+    justify-content: center;
+  }
+  .portofolio-section-container .card-container {
+    width: 350px;
+    flex-direction: column;
+    background-color: var(--bg-color);
+  }
 
+  .btn-container {
+    display: flex;
+    flex-direction: column;
+  }
+  .contact-section {
+    padding: 0px;
+  }
+
+  .contact-section .main-container {
+    padding: 20px;
+  }
+
+  .card-container .section-title {
+    padding: 0px;
+  }
 }
-@media only screen and (max-width: 1024px) {
+@media only screen and (min-width: 768px) and (max-width: 1024px) {
   .portofolio-section {
     padding: 20px;
     margin-top: 20px;
     gap: 20px;
   }
-
+  .portofolio-section-container .card-container {
+    width: 700px;
+    flex-direction: column;
+  }
   .portofolio-section-container {
     display: flex;
     align-items: center;
@@ -786,13 +828,31 @@ footer {
 
   .contact-section {
     padding: 20px;
-    margin-top: 20px;
   }
 
   .contact-section .section-title {
     padding: 20px;
   }
+  .portofolio-section-container {
+    width: 700px;
+  }
+  .portofolio-section-wrapper {
+    margin: auto;
+  }
 
+  .portofolio-section .main-container {
+    margin: auto;
+    padding: 0;
+  }
+
+  .skill-section .skill-section-container .skill-card-section {
+    width: 100%;
+  }
+  .skill-section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
 }
 
 footer {
@@ -803,8 +863,15 @@ footer {
 .card-container {
   display: flex;
   width: 800px;
-  flex-direction: row;
   background-color: var(--bg-color);
+}
+
+.card-container.row {
+  flex-direction: row;
+}
+
+.card-container.row-reverse {
+  flex-direction: row-reverse;
 }
 
 .btn-container {
@@ -823,11 +890,6 @@ footer {
 .first-col,
 .second-col {
   flex: 1;
-  position: relative;
-  background-color: var(--white);
-}
 
-.portofolio-img {
-  width: 100%;
-  height: auto;
+  background-color: var(--white);
 }
