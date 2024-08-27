@@ -10,7 +10,11 @@ import HomeIcon from "@mui/icons-material/Home";
 import { motion } from "framer-motion";
 function Navbar() {
   const [nav, setNav] = useState(false);
+  const [isActive, setIsActive] = useState(false);
 
+  function handleClick(index){
+    setIsActive(index);
+  }
   return (
     <nav>
       <div className="logo">Alex.Dev</div>
@@ -25,7 +29,8 @@ function Navbar() {
           to="heroSection"
           duration={500}
           smooth={true}
-          className="navbar-content"
+          className={`navbar-content ${isActive === 0 ? 'active-class' : ''}`}
+          onClick={() => handleClick(0)}
         >
           <motion.li
             whileHover={{ scale: 1.1 }}
@@ -38,7 +43,8 @@ function Navbar() {
           to="my-skills"
           duration={500}
           smooth={true}
-          className="navbar-content"
+          className={`navbar-content ${isActive === 1 ? 'active-class' : ''}`}
+          onClick={() => handleClick(1)}
         >
           <motion.li
             whileHover={{ scale: 1.1 }}
@@ -51,7 +57,8 @@ function Navbar() {
           to="about-me"
           duration={500}
           smooth={true}
-          className="navbar-content"
+          className={`navbar-content ${isActive === 2 ? 'active-class' : ''}`}
+          onClick={() => handleClick(2)}
         >
           <motion.li
             whileHover={{ scale: 1.1 }}
@@ -64,7 +71,8 @@ function Navbar() {
           to="portofolio"
           duration={500}
           smooth={true}
-          className="navbar-content"
+          className={`navbar-content ${isActive === 3 ? 'active-class' : ''}`}
+          onClick={() => handleClick(3)}
         >
           <motion.li
             whileHover={{ scale: 1.1 }}

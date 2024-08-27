@@ -256,6 +256,10 @@ footer {
   font-weight: bold;
 }
 
+.navbar-content.active-class{
+  color:#67a6eb;
+}
+
 .list-container {
   display: flex;
   list-style-type: none;
