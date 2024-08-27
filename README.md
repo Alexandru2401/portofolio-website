@@ -3,7 +3,7 @@ This is my portofolio-website. This project contains more information about me, 
 It was written using HTML, Vanilla Css and React.
 It's important to know that i work continuosly to improve myself, so this is not de final form. 
 I will constantly update the website including my new projects.
-Here you can see my portofolio-website :"https://portofolio-website-alex.netlify.app".
+Here you can see my portofolio-website :"https://portofolio-project-alex-fe.netlify.app".
 ## Important note:
    This is not the final form, will constantly work on projects and I will also modify this portfolio. 
    
