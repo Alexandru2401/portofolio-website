@@ -40,10 +40,12 @@ export default function PortofolioCard({
       whilehover={{ scale: 1.1, transition: { duration: 0.3 } }}
     >
       <div className="first-col">
+        <div className="img-overlay-container">
         <Link to={demo} target="_blank">
           <img className="portofolio-img" src={img} alt="portofolio img" />
           <div className="overlay-text">See live demo</div>
         </Link>
+        </div>
       </div>
       <div className="second-col">
         <div className="portofolio-section-card-content">

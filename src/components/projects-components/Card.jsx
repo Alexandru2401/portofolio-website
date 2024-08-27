@@ -6,7 +6,7 @@ export function Card({ title, skills }) {
     triggerOnce: false,
     threshold: 0.2,
   });
-  return (
+  return ( 
     <motion.div
       className="skill-card-section"
       ref={ref}
